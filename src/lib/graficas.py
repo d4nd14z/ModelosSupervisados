@@ -19,7 +19,7 @@ class Graficos():
         plt.figure(figsize=(10,6))
         sns.heatmap(self.df.isnull(), yticklabels=False, cbar=False, cmap="Blues")
         plt.title("Mapa de Valores Nulos")
-        plt.show(renderer="png")
+        plt.show()
 
     def graficarValoresColumna(self, columna:str):
         """
@@ -125,7 +125,7 @@ class Graficos():
 
             fig.update_traces(opacity=0.7)
 
-        fig.show(renderer="png")
+        fig.show()
         return fig
         
     
